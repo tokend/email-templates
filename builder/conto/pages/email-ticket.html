@@ -8,21 +8,19 @@ subject: Conto Ticket
     <row>
         <columns>
             <spacer size="16"></spacer>
-            <h2>Hello \{{.Name}} \{{.Surname}}!</h2>
-
+            <p>Ваш билет на BlockchainUA прикреплен к этому письму в виде
+                QR-кода – просто покажите этот QR-код на стойке регистрации
+                конференции.</p>
             <spacer size="16"></spacer>
-
-            <p>You have purchased new ticket in Conto.</p>
-            <spacer size="32"></spacer>
-            <p>Quantity: \{{.Quantity}}</p>
-            <p>Conference: \{{.Conference}}</p>
-            <spacer size="32"></spacer>
             <img
                 class="ticket-qr-code"
                 src="data:image/jpg;base64,\{{.Qr}}"
             />
-            <spacer size="64"></spacer>
-            
+            <spacer size="16"></spacer>
+            <p>Если вы хотите получать подарки от организаторов и участвовать
+                в розыгрышах на конференции, пожалуйста, зарегистрируйтесь в
+                системе, нажав на кнопку ниже. Мы вас удивим!</p>
+
             {{> footer }}
 
         </columns>
