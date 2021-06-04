@@ -18,7 +18,7 @@ html,
 }
 
 .body-drip {
-  border-top: 8px solid #6C5DD3;
+  border-top: 8px solid #D5B094;
 }
 
 // Full Width Headers
@@ -32,10 +32,11 @@ html,
 }
 
 .header p {
-  color: #6C5DD3;
+  color: #000000;
   font-weight: 600;
   letter-spacing: 1px;
   margin-top: 10px;
+  font-size: 20px !important;
 }
 
 .header .wrapper-inner {
@@ -114,7 +115,7 @@ table.button.google table td {
 }
 
 table.button table td {
-  background-color: #6C5DD3;
+  background-color: #D5B094;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
   transition: .4s cubic-bezier(.4, 0, .2, 1);
   border-radius: 2px !important;
