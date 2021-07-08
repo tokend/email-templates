@@ -6,7 +6,7 @@ To build mail run command:
 npm run build nameproject  environment
 ```
 
-nameproject: 'tokend', 'conto'
+nameproject: 'tokend', 'conto', 'alium', 'chord', 'job-platform'
 environment: all, dev, prod, stage
 If it doesn't work use: chmod-x ./build.sh
 
