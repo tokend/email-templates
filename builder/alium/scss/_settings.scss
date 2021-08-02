@@ -25,6 +25,12 @@ $color-blue: #3a4180;
 $color-cornflowerBlue: #7b6eff;
 $color-orange: #ffaf03;
 $color-white: #ffffff;
+$color-dark-gray: #0f0823;
+$color-bright-gray: #585858;
+$color-silver-chalice: #9f9f9f;
+$color-golden-tainoi: #ffcb67;
+$color-haiti: #140a23;
+$color-mercury: #e8e8e8;
 
 
 // 1. Global
@@ -112,22 +118,22 @@ $button-padding: (
   tiny: 4px 8px 4px 8px,
   small: 5px 10px 5px 10px,
   default: 8px 16px 8px 16px,
-  large: 10px 20px 10px 20px,
+  large: 14px 24px 14px 24px,
 );
 $button-font-size: (
   tiny: 10px,
   small: 12px,
   default: 16px,
-  large: 20px,
+  large: 14px,
 );
-$button-color: $white;
+$button-color: #140a23;
 $button-color-alt: $medium-gray;
 $button-font-weight: lighter;
 $button-margin: 0 0 $global-margin 0;
-$button-background: lighten($color-orange, 7%);
-$button-border: 2px solid $button-background;
-$button-radius: 0;
-$button-rounded: $global-rounded;
+$button-background: #ffcb67;
+$button-border: 0;
+$button-radius: 50px;
+$button-rounded: 50px;
 
 // 6. Callout
 // ----------

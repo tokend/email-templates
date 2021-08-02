@@ -23,7 +23,7 @@ html,
 
 // Full Width Headers
 .header {
-  background: $color-gray;
+  background: $color-dark-gray;
   box-shadow: inset -1rem -1rem 2rem 0 rgba(0, 0, 0, 0.03);
 }
 
@@ -47,12 +47,20 @@ html,
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $color-black;
+  color: $color-dark-gray;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.25;
 }
 
 p {
-  color: $color-black;
+  color: $color-bright-gray;
   font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04rem;
 }
 
 p.large-notice {
@@ -61,6 +69,47 @@ p.large-notice {
 
 p.notice {
   font-size: 12px;
+  color: $color-silver-chalice;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+  vertical-align: middle;
+  margin: 0 !important;
+  margin-top: 15px !important;
+}
+
+table.footer__btn > tbody > tr > td > table > tbody > tr > td {
+background: none !important;
+box-shadow: none !important;
+
+  & > a {
+    border-radius: 50px;
+    height: 56px;
+    background-color: $color-golden-tainoi;
+    color: $color-haiti;
+    box-sizing: border-box;
+    line-height: 1.43;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    text-transform: none !important;
+    padding: 18px 24px !important;
+  }
+}
+
+.footer__link {
+  font-size: 12px;
+  color: $color-haiti !important;
+  text-decoration: underline;
+  vertical-align: middle !important;
+}
+
+.footer__social-img {
+  display: inline-block;
+  vertical-align: middle !important;
+}
+
+.footer__socials-delimiter {
+  color: $color-mercury
 }
 
 // Social Media
@@ -88,9 +137,11 @@ table.button.google table td {
   padding-left: 10px;
   margin-left: 10px;
   color: $color-orange;
+
   h4 {
     font-size: 19px;
   }
+
   h5 {
     font-size: 15px;
     margin-bottom: 5px;
@@ -102,6 +153,7 @@ table.button.google table td {
   width: 80% !important;
   border-radius: 0px;
   box-shadow: 0px 2px 6px 0px grey;
+
   .columns {
     border-bottom: solid 1px $color-orange;
     padding: 10px 20px 0;
