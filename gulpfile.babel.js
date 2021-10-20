@@ -18,7 +18,7 @@ let BUILDDEV = false;
 let BUILDSTAGE = false;
 let BUILDPROD = false;
 
-gulp.task('default', gulp.series(checkEnvironment, reset, pages, sass, inline, clean, release, server, watch));
+gulp.task('default', gulp.series(checkEnvironment, clean, reset, pages, sass, inline, release, server, watch));
 
 function checkEnvironment (done) {
   if (yargs.argv.environment === 'dev') {
