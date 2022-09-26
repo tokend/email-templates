@@ -1,0 +1,1 @@
+gulp --projectname $1 --environment $2

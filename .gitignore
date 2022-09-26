@@ -1,0 +1,5 @@
+/.idea/
+/node_modules
+/pages/
+templates
+.DS_Store
