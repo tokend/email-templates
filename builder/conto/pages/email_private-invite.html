@@ -1,0 +1,35 @@
+---
+subject: Private Invite
+---
+
+<container class="main-container">
+  {{> header}}
+
+    <row>
+      <h2 style="padding-left: 30px; background-color: #eef1f6; margin-bottom: 0; padding-bottom: 10px">Welcome to NiftyOne!</h2>
+    </row>
+
+    <row style="background-color: #e0e3e9">
+      <columns style="padding-left: 30px">
+        <spacer size="24"></spacer>
+        <p>Hello!</p>
+        <p>Congratulations, you have been registered in the NiftyOne system.</p>
+        <p>You can download the application to your smartphone from the link below:</p>
+        <a href="\{{.DownloadLink}}">\{{.DownloadLink}}</a>
+      </columns>
+    </row>
+
+    <row style="background-color: #eef1f6">
+      <columns style="padding-left: 30px">
+      <p style="padding-top: 10px;">Your personal registration link:</p>
+      <a href="\{{.RegisterLink}}">\{{.RegisterLink}}</a>
+      </columns>
+    </row>
+
+    <footer style="background-color: #5553ff;">
+      <spacer size="16"></spacer>
+      <row>
+          {{> footer__notice}}
+      </row>
+    </footer>
+</container>
