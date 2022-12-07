@@ -9,24 +9,44 @@ subject: Private Invite
       <h2 style="padding-left: 16px; background-color: #eef1f6; margin-bottom: 0; padding-bottom: 10px">Welcome to NiftyOne!</h2>
     </row>
 
+    <spacer size="24"></spacer>
+
+    <p style="padding-left: 16px; font-size: 20px">Hello!</p>
+    
+    <spacer size="6"></spacer>
+
+    <p style="padding-left: 16px; padding-right: 16px;">
+      Congratulations, you have been invited in the NiftyOne system.
+    </p>
+
+    <spacer size="6"></spacer>
+
     <row style="background-color: #e0e3e9">
       <columns small="6">
-        <spacer size="24"></spacer>
-        <p>Hello!</p>
-        <p>Congratulations, you have been invited to NiftyOne system.</p>
-        <spacer size="24"></spacer>
-        <p>You can download the application to your iPhone from the link below:</p>
-        <a href="https://www.google.com">https://www.google.com/</a>
-      </columns>
-      <columns style="width:100px;" small="6">
-        <img src="https://diamonds-stage-bucket.sfo3.digitaloceanspaces.com/tel_1%206.png" alt="">
-      </columns>
+        <spacer size="16"></spacer>
+        <p style="font-weight: 600">
+          Please open this email on your iPhone and complete 3 simple steps:
+        </p>
+        <ol>
+          <li>
+            <p>If you have not <b>Testflight</b> app, please download it from <b>AppStore</b>:</p>
+            <a href="https://apps.apple.com/app/testflight/id899247664">Download TestFlight</a>
+          </li>
+          <spacer size="16"></spacer>
+          <li>
+            <p>Then download <b>NiftyOne</b> app from <b>Testflight</b>:</p>
+            <a href="https://testflight.apple.com/join/u5yurfAV">Download NiftyOne</a>
+          </li>
+        </ol>
+    </columns>
+    <columns style="width:100px;" small="6">
+      <img src="http://s3.eu-west-2.amazonaws.com/niftyone-notification-templates/tel_1_6.png" alt="img">
+    </columns>
     </row>
  
-
     <row style="background-color: #eef1f6">
       <columns style="padding-left: 16px">
-      <p style="padding-top: 10px;">Your personal registration link:</p>
+      <p style="padding-top: 10px;">3. Use your personal link to create an account:</p>
       <a href="\{{.Link}}">\{{.Link}}</a>
       </columns>
     </row>
