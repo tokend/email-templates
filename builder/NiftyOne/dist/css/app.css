@@ -249,9 +249,6 @@ html,
 .body {
   background: #f3f3f3 !important; }
 
-.header {
-  background-color: #eef1f6; }
-
 .header .columns {
   padding-bottom: 0;
   padding-left: 30px !important; }
@@ -278,7 +275,7 @@ h2 {
   color: #010000; }
 
 h2 {
-  font-weight: 600;
+  font-weight: 400 !important;
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   line-height: 38px; }
