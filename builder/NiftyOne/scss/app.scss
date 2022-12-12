@@ -22,11 +22,6 @@ html,
   border-top: 8px solid #663399;
 }
 
-// Full Width Headers
-.header {
-  background-color: #eef1f6;
-}
-
 .header .columns {
   padding-bottom: 0;
   padding-left: 30px!important;
@@ -74,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 400!important;
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   line-height: 38px;

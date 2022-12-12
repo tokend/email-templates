@@ -6,7 +6,7 @@ subject: Private Invite
   {{> header}}
 
     <row>
-      <h2 style="padding-left: 16px; background-color: #eef1f6; margin-bottom: 0; padding-bottom: 10px">Welcome to NiftyOne!</h2>
+      <h2 style="padding-left: 16px; color: #5553FF; margin-bottom: 0; padding-bottom: 10px">Welcome to NiftyOne!</h2>
     </row>
 
     <spacer size="24"></spacer>
@@ -16,7 +16,7 @@ subject: Private Invite
     <spacer size="6"></spacer>
 
     <p style="padding-left: 16px; padding-right: 16px;">
-      Congratulations, you have been invited to NiftyOne's property coining service.
+      Congratulations, you have been invited in the NiftyOne’s property coining service.
     </p>
 
     <spacer size="6"></spacer>
@@ -24,18 +24,18 @@ subject: Private Invite
     <row style="background-color: #e0e3e9">
       <columns small="6">
         <spacer size="16"></spacer>
-        <p style="font-weight: 600">
-          Please open this email on your iPhone and complete 3 simple steps:
+        <p>
+          Please open this email on your iPhone and complete <b>2 simple steps</b>:
         </p>
         <ol>
           <li>
-            <p>If you do not have <b>Testflight</b> app, please download it from <b>APPSTORE</b>:</p>
-            <a href="https://apps.apple.com/app/testflight/id899247664">Download TestFlight</a>
-          </li>
-          <spacer size="16"></spacer>
-          <li>
-            <p>Then download <b>NiftyOne</b> app from <b>Testflight</b>:</p>
+            <p>Follow the instruction from this link to install the application:</p>
             <a href="https://testflight.apple.com/join/u5yurfAV">Download NiftyOne</a>
+          </li>
+          <spacer size="24"></spacer>
+          <li>
+            <p>Click on your personal registration link and select <b>default browser:</b></p>
+            <a href="\{{.Link}}">Open personal link</a>
           </li>
         </ol>
     </columns>
@@ -43,13 +43,8 @@ subject: Private Invite
       <img src="http://s3.eu-west-2.amazonaws.com/niftyone-notification-templates/tel_1_6.png" alt="img">
     </columns>
     </row>
- 
-    <row style="background-color: #eef1f6">
-      <columns style="padding-left: 16px">
-      <p style="padding-top: 10px;">3. Сlick on your personal registration link and select Default browser:</p>
-      <a href="\{{.Link}}" style="padding-left: 18px;">Open personal link</a>
-      </columns>
-    </row>
+
+    <spacer size="16"></spacer>
 
     <footer style="background-color: #5553ff;">
       <spacer size="16"></spacer>
