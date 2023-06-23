@@ -1,0 +1,41 @@
+---
+subject: Email Verification
+---
+
+<container class="main-container">
+  {{> header}}
+    <row>
+      <columns small="7" style="padding-right: 0 !important;">
+        <h2>
+          Hello!
+        </h2>
+        
+        <spacer size="16"></spacer>
+
+        <p>
+          Click on the button “Click here to verify” to authenticate your account.
+        </p>
+        <p>
+          We want you to get started as soon as possible. If by any chance you are not able to click the button we have provided
+          <a href="\{{.Link}}">a link</a>
+          for you to copy and paste in your browser.
+        </p>
+
+      </columns>
+      <columns small="5" style="padding-right: 10px !important; padding-bottom: 0 !important;">
+        <img src="http://s3.eu-west-2.amazonaws.com/niftyone-notification-templates/tel_1_6.png" alt="img">
+      </columns>
+    </row>
+
+    <spacer size="40"></spacer>
+
+    <row>
+      <columns small="12">
+        <button class="expanded radius" href="\{{.Link}}">
+          Click here to verify
+        </button>
+      </columns>
+    </row>
+
+    {{> footer}}
+</container>
