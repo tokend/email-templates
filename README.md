@@ -12,4 +12,9 @@ If it doesn't work use: chmod-x ./build.sh
 
 Final templates can be found inside pages folder
 
-works olly on node/8.15.0
+Works on node v14.21.3
+
+If problem with PhantomJS
+```bash
+export OPENSSL_CONF=/etc/ssl/
+```
