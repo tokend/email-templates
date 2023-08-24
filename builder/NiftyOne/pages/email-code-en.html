@@ -2,35 +2,42 @@
 subject: Password Recovery
 ---
 
-<container class="main-container">
+<container class="body">
   {{> header}}
 
+  <spacer size="30" class="body__spacer" />
+
   <row>
-    <h2 style="padding-left: 15px; color: #5553FF; margin-bottom: 0; padding-bottom: 10px">Password Reset</h2>
-  </row>
-
-  <row style="background-color: #eef1f6; padding-left: 30px">
-    <columns style="padding: 0 0 0 16px!important;" small="6">
-      <spacer size="16"></spacer>
-      <p>Hello!</p>
-      <p>We received a request to reset the password for the account that is associated with this email address. Please, enter this code in a special field:</p>
-
-      <p style="color:#5553ff">\{{.Code}}</p>
-
-      <p>If you have not requested a password change, leave this email unattended.</p>
-    </columns>
-    <columns style="padding: 0!important; width: 130px;" small="6">
-      <img src="http://s3.eu-west-2.amazonaws.com/niftyone-notification-templates/diorama_test_w_0081_alpha_1.png" alt="">
+    <columns class="body__columns">
+      <wrapper class="content__wrapper content__wrapper--small-padding">
+        <spacer size="4" class="body__spacer--color"/>
+        <h2 class="body__title">Reset your password</h2>
+        <center>
+          <img class="body__img" src="https://s3.eu-west-2.amazonaws.com/niftyone-identity-storage-helping-honeybeeg/reset-password.png" alt="reset password" />
+        </center>
+      </wrapper>
     </columns>
   </row>
 
-  <spacer size="16"></spacer>
+  <row>
+    <columns class="body__columns">
+      <wrapper class="content__wrapper">
+        <p class="text-center">Hi <a class="body__email">\{{.Email}}</a>,</p>
+        <p class="text-center">We are sending you this email because you requested a password reset.</p>
+        <p class="text-center">Please use the following 4-digit code to complete the process:</p>
+        
+        <spacer size="20" />
 
-  <footer style="background-color: #5553ff;">
-    <spacer size="16"></spacer>
-    <row>
-        {{> footer__notice}}
-    </row>
-  </footer>
+        <h1 class="content__code">\{{.Code}}</h1>
+
+        <spacer size="20" />
+
+        <p class="text-center">If you didn’t request this email, there’s nothing to worry about - you can safely ignore it. Your password will not be changed.</p>
+      </wrapper>
+
+    </columns>
+  </row>
+
+  {{> footer}}
 </container>
 

@@ -5,30 +5,114 @@
 body,
 html,
 .body {
-  background: $color-white;
+  background: $color-light-gray;
+}
+
+.body__spacer {
+  background-color: $color-light-gray;
+
+  &--color {
+    background-color: $color-blue;
+  }
 }
 
 // Header
 .header {
-  margin: $header-margin-vertical $header-margin-horizontal;
+  background: $color-white;
 }
 
 .header .columns {
-  padding-bottom: 0;
-  padding-left: 16px;
+  padding-top: $header-padding-vertical;
+  padding-bottom: $header-padding-vertical;
 }
 
-.header img {
-  max-width: $header-width;
+.header__logo {
+  max-width: 118px;
+}
+
+.body__columns {
+  background: $color-light-gray;
+}
+
+.content__wrapper {
+  background: $color-white;
+  color: $color-black;
+
+  & .wrapper-inner {
+    padding: 20px 16px;
+  }
+
+  &--small-padding {
+    & .wrapper-inner {
+      padding: 0 0 16px;
+    }
+  }
+}
+
+.body__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.body__img {
+  max-height: 220px;
+}
+
+.body__email {
+  color: $color-blue;
+  text-decoration: none;
+}
+
+.content__code {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: $color-blue;
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: $color-white;
+}
+
+.content__btn {
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 700;
+  background: $color-blue;
+  color: $color-white;
+
+  & table td a {
+    letter-spacing: 0.2px;
+  }
 }
 
 // Footer
 .footer {
-  border-top: 1px dashed $color-light-gray;
+  background: $color-light-gray;
+  border-top: 1px solid $color-gray;
+
+  & .footer__columns {
+    padding-bottom: 0;
+  }
 }
 
-.footer .columns {
-  padding-bottom: 0;
+.footer__notice {
+  margin-top: 4px;
+  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-dark-grey;
+}
+
+.footer-links__item {
+  font-size: 12px;
+
+  &:last-of-type {
+    margin-left: 20px;
+  }
 }
 
 // Typography
@@ -45,41 +129,15 @@ h2 {
 
 p {
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.3;
-  color: $color-dark-grey;
-}
-
-p.large-notice {
-  font-size: 14px;
-}
-
-p.notice {
-  padding: 20px 16px;
-  font-size: 12px;
-  line-height: 1.3;
-  color: $color-gray;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: $color-black;
 }
 
 a {
-  color: #5553ff;
+  color: $color-blue;
   text-decoration: underline;
   word-break: break-word;
-}
-
-// Button
-table.button table td {
-  background-color: $button-background;
-  transition: .4s cubic-bezier(.4, 0, .2, 1);
-}
-
-table.button:hover table td {
-  background-color: $button-background-hover;
-}
-
-table.button table td a {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 500;
 }
