@@ -2,40 +2,43 @@
 subject: Email Verification
 ---
 
-<container class="main-container">
+<container class="body">
   {{> header}}
-    <row>
-      <columns small="7" style="padding-right: 0 !important;">
-        <h2>
-          Hello!
-        </h2>
+
+  <spacer size="30" class="body__spacer" />
+
+  <row>
+    <columns class="body__columns">
+      <wrapper class="content__wrapper content__wrapper--small-padding">
+        <spacer size="4" class="body__spacer--color"/>
+        <h2 class="body__title">Confirm your email</h2>
+        <center>
+          <img class="body__img" src="https://s3.eu-west-2.amazonaws.com/niftyone-identity-storage-helping-honeybeeg/confirm-email.png" alt="reset password" />
+        </center>
+      </wrapper>
+    </columns>
+  </row>
+
+  <row>
+    <columns class="body__columns">
+      <wrapper class="content__wrapper">
+        <p class="text-center">Once you’ve confirmed that </p>
+        <p class="text-center body__email">\{{.Email}}</p>
+        <p class="text-center">is your email address, you can start using it right away! From your mobile device, tap the button below to confirm:</p>
         
-        <spacer size="16"></spacer>
+        <spacer size="20" />
 
-        <p>
-          Click on the button “Click here to verify” to authenticate your account.
-        </p>
-        <p>
-          We want you to get started as soon as possible. If by any chance you are not able to click the button we have provided
-          <a href="\{{.Link}}">a link</a>
-          for you to copy and paste in your browser.
-        </p>
+        <center>
+          <button class="expanded content__btn" href="\{{.Code}}">Confirm your email</button>
+        </center>
 
-      </columns>
-      <columns small="5" style="padding-right: 10px !important; padding-bottom: 0 !important;">
-        <img src="http://s3.eu-west-2.amazonaws.com/niftyone-notification-templates/tel_1_6.png" alt="img">
-      </columns>
-    </row>
+        <spacer size="4" />
 
-    <spacer size="40"></spacer>
+        <p class="text-center">If you didn’t request this email, there’s nothing to worry about - you can safely ignore it.</p>
+      </wrapper>
 
-    <row>
-      <columns small="12">
-        <button class="expanded radius" href="\{{.Link}}">
-          Click here to verify
-        </button>
-      </columns>
-    </row>
+    </columns>
+  </row>
 
-    {{> footer}}
+  {{> footer}}
 </container>
