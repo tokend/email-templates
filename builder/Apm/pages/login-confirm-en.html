@@ -1,0 +1,22 @@
+---
+subject: Login Confirmation
+---
+
+<container class="body">
+  {{> header}}
+
+  <row>
+    <columns class="body__columns">
+      <h2 class="body__title">Підтвердження входу в систему</h2>
+      <spacer size="24" />
+      <p>Добрий день!</p>
+      <spacer size="24" />
+      <p>Нижче ваш код для верифікації:</p>
+      <h1>\{{.Code}}</h1>
+      <spacer size="24" />
+      <p>Будь ласка, введіть його в форму запиту коду в системі APM-AOC.</p>
+      <spacer size="46" />
+      {{> footer}}
+    </columns>
+  </row>
+</container>

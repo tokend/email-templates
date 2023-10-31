@@ -5,11 +5,11 @@
 body,
 html,
 .body {
-  background: $color-light-gray;
+  background: $color-white;
 }
 
 .body__spacer {
-  background-color: $color-light-gray;
+  background-color: $color-white;
 
   &--color {
     background-color: $color-blue;
@@ -31,7 +31,7 @@ html,
 }
 
 .body__columns {
-  background: $color-light-gray;
+  background: $color-white;
 }
 
 .content__wrapper {
@@ -50,9 +50,7 @@ html,
 }
 
 .body__title {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
+  color: #424242;
 }
 
 .body__img {
@@ -82,6 +80,8 @@ html,
   font-weight: 700;
   background: $color-blue;
   color: $color-white;
+  width: 240px;
+  border-radius: 4px;
 
   & table td a {
     letter-spacing: 0.2px;
@@ -90,8 +90,7 @@ html,
 
 // Footer
 .footer {
-  background: $color-light-gray;
-  border-top: 1px solid $color-gray;
+  background: $color-white;
 
   & .footer__columns {
     padding-bottom: 0;
@@ -123,21 +122,25 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 1.15;
 }
 
 p {
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.2px;
-  color: $color-black;
+  color: $color-dark-grey!important;
 }
 
 a {
   color: $color-blue;
   text-decoration: underline;
   word-break: break-word;
+}
+
+span {
+  color: $color-blue;
 }
