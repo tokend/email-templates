@@ -1,0 +1,146 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body
+body,
+html,
+.body {
+  background: $color-white;
+}
+
+.body__spacer {
+  background-color: $color-white;
+
+  &--color {
+    background-color: $color-blue;
+  }
+}
+
+// Header
+.header {
+  background: $color-white;
+}
+
+.header .columns {
+  padding-top: $header-padding-vertical;
+  padding-bottom: $header-padding-vertical;
+}
+
+.header__logo {
+  max-width: 118px;
+}
+
+.body__columns {
+  background: $color-white;
+}
+
+.content__wrapper {
+  background: $color-white;
+  color: $color-black;
+
+  & .wrapper-inner {
+    padding: 20px 16px;
+  }
+
+  &--small-padding {
+    & .wrapper-inner {
+      padding: 0 0 16px;
+    }
+  }
+}
+
+.body__title {
+  color: #424242;
+}
+
+.body__img {
+  max-height: 220px;
+}
+
+.body__email {
+  color: $color-blue;
+  text-decoration: none;
+}
+
+.content__code {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: $color-blue;
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: $color-white;
+}
+
+.content__btn {
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 700;
+  background: $color-blue;
+  color: $color-white;
+  width: 240px;
+  border-radius: 4px;
+
+  & table td a {
+    letter-spacing: 0.2px;
+  }
+}
+
+// Footer
+.footer {
+  background: $color-white;
+
+  & .footer__columns {
+    padding-bottom: 0;
+  }
+}
+
+.footer__notice {
+  margin-top: 4px;
+  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-dark-grey;
+}
+
+.footer-links__item {
+  font-size: 12px;
+
+  &:last-of-type {
+    margin-left: 20px;
+  }
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+  color: $color-black;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: $color-dark-grey!important;
+}
+
+a {
+  color: $color-blue;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+span {
+  color: $color-blue;
+}

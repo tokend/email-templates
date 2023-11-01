@@ -1,0 +1,26 @@
+---
+subject: Email Confirmation
+---
+
+<container class="body">
+  {{> header}}
+
+  <row>
+    <columns class="body__columns">
+      <h2 class="body__title">Підтвердження електронної пошти</h2>
+      <spacer size="24" />
+      <p>Добрий день!</p>
+      <spacer size="24" />
+      <p>Ви створили аккаунт в системі APM-AOC. Для продовження роботи з системою, будь ласка, підтвердіть адресу електронної пошти. </p>
+      <spacer size="24" />
+      <p>Для підтвердження натисніть кнопку нижче.</p>
+      <spacer size="24" />
+      <p>Дякуємо,</p>
+      <p>команда APM-AOC</p>
+      <spacer size="32" />
+      <button class="medium content__btn" href="\{{.Link}}">Підтвердити пошту</button>
+      <spacer size="46" />
+      {{> footer}}
+    </columns>
+  </row>
+</container>
